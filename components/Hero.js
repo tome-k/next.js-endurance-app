@@ -1,9 +1,17 @@
 import Image from "next/image";
+import styles from "../styles/Hero.module.css";
 
 function Hero() {
   return (
-    <div>
-      <Image src="/images/run_004.jpg" alt="landscape runner photo" />
+    <div className={styles.heroContainer}>
+      <Image
+        src="/images/run_08.jpg"
+        alt="landscape runner photo"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className={styles.heroImage}
+      />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Divider from "../components/Divider";
+import Hero from "../components/Hero";
 import Navigation from "../components/Navigation";
 
 export default function Home() {
@@ -10,6 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
+      <Hero />
+      <Divider />
     </>
   );
 }

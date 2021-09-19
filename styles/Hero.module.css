@@ -1,0 +1,10 @@
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage {
+  filter: brightness(30%);
+  z-index: -3;
+}
