@@ -140,19 +140,21 @@ nav {
 }
 
 .nav-header-logo {
+  margin-top: 8px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
 .nav-header-logo h4 {
-  color: var(--clr-primary-7);
+  color: var(--clr-primary-5);
   font-size: 1.9rem;
+  font-weight: 500;
 }
 
 .nav-header-icon {
-  font-size: 2.5rem;
-  color: var(--clr-primary-7);
+  font-size: 2rem;
+  color: var(--clr-primary-5);
   margin-left: 0.5rem;
 }
 
@@ -171,7 +173,7 @@ nav {
 
 .links a {
   color: var(--clr-grey-3);
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
@@ -196,12 +198,12 @@ nav {
 }
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.875rem;
   }
   .nav-header {
     padding: 0;
@@ -225,11 +227,13 @@ nav {
   }
   .social-icons {
     display: flex;
+    margin-top: 5px;
   }
   .social-icons a {
     margin: 0 0.5rem;
     color: var(--clr-primary-5);
     transition: var(--transition);
+    font-size: 1.45rem;
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
