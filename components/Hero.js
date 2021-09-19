@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className={styles.heroContainer}>
       <Image
-        src="/images/run_08.jpg"
+        src="/images/run_04.jpg"
         alt="landscape runner photo"
         layout="fill"
         objectFit="cover"

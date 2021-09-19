@@ -1,6 +1,6 @@
 .dividerContainer {
-  margin-top: 100rem;
+  margin-top: 80rem;
   width: 100%;
   background-color: rgb(126, 122, 122);
-  max-height: 100vh;
+  min-height: 100vh;
 }

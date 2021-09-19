@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
-import { GrRun } from "react-icons/gr";
-import { GiRunningNinja } from "react-icons/gi";
+import { GiRunningNinja, GiRunningShoe } from "react-icons/gi";
 import { links, social } from "../data/nav_data.js";
+import Link from "next/link";
 
 const Navigation = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -24,12 +23,14 @@ const Navigation = () => {
       <div className="nav-center">
         <div className="nav-header">
           <div className="nav-header-logo">
-            <h4>running-passion</h4>
+            <Link href="/">
+              <a>running-passion</a>
+            </Link>
             <GiRunningNinja className="nav-header-icon" />
           </div>
 
           <button className="nav-toggle" onClick={toggleLinks}>
-            <FaBars />
+            <GiRunningShoe size={30} />
           </button>
         </div>
         <div className="links-container" ref={linksContainerRef}>
@@ -49,7 +50,9 @@ const Navigation = () => {
             const { id, url, icon } = socialIcon;
             return (
               <li key={id}>
-                <a href={url}>{icon}</a>
+                <a href={url} target="_blank" rel="noreferrer">
+                  {icon}
+                </a>
               </li>
             );
           })}

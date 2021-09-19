@@ -1,5 +1,10 @@
 import React from "react";
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookSquare,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 export const links = [
   {
     id: 1,
@@ -8,31 +13,31 @@ export const links = [
   },
   {
     id: 2,
-    url: "/about",
-    text: "about",
+    url: "/plans",
+    text: "plans",
   },
   {
     id: 3,
-    url: "/projects",
-    text: "projects",
+    url: "/equipment",
+    text: "equipment",
   },
   {
     id: 4,
-    url: "/contact",
-    text: "contact",
+    url: "/blog",
+    text: "blog",
   },
   {
     id: 5,
-    url: "/profile",
-    text: "profile",
+    url: "/contact",
+    text: "contact",
   },
 ];
 
 export const social = [
   {
     id: 1,
-    url: "https://www.twitter.com",
-    icon: <FaFacebook />,
+    url: "https://www.youtube.com",
+    icon: <FaYoutube />,
   },
   {
     id: 2,
@@ -41,12 +46,12 @@ export const social = [
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
-    icon: <FaLinkedin />,
+    url: "https://www.facebook.com",
+    icon: <FaFacebookSquare />,
   },
   {
     id: 4,
-    url: "https://www.twitter.com",
-    icon: <FaBehance />,
+    url: "https://www.instagram.com",
+    icon: <FaInstagram />,
   },
 ];
