@@ -6,9 +6,9 @@ function Layout({ children }) {
   const router = useRouter();
   return (
     <>
-      {router.pathname !== "/_error" && <Navigation />}
+      {router.pathname !== "/404" && <Navigation />}
       <main className="main-content">{children}</main>
-      {router.pathname !== "/_error" && <Footer />}
+      {router.pathname !== "/404" && <Footer />}
     </>
   );
 }
