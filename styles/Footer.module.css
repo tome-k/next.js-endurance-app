@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/run_02.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-height: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+.footer > p {
+  color: var(--clr-primary-6);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: blue;
+}
+
+@media (max-width: 699px) {
+  .footer > p {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
