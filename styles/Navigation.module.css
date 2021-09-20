@@ -2,7 +2,6 @@
   position: sticky;
   top: 0;
   z-index: 3;
-  /* background: var(--clr-white); */
   background: rgba(19, 18, 18, 0.8);
   box-shadow: var(--dark-shadow);
 }

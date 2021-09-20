@@ -8,9 +8,11 @@ const Navigation = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
+
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
@@ -39,8 +41,8 @@ const Navigation = () => {
             {links.map((link) => {
               const { id, url, text } = link;
               return (
-                <li key={id}>
-                  <a href={url}>{text}</a>
+                <li key={id} onClick={toggleLinks}>
+                  <Link href={url}>{text}</Link>
                 </li>
               );
             })}
@@ -51,9 +53,11 @@ const Navigation = () => {
             const { id, url, icon } = socialIcon;
             return (
               <li key={id}>
-                <a href={url} target="_blank" rel="noreferrer">
-                  {icon}
-                </a>
+                <Link href={url}>
+                  <a target="_blank" rel="noreferrer">
+                    {icon}
+                  </a>
+                </Link>
               </li>
             );
           })}
