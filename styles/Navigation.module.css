@@ -1,0 +1,118 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  /* background: var(--clr-white); */
+  background: rgba(19, 18, 18, 0.8);
+  box-shadow: var(--dark-shadow);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: "Gluten", cursive;
+  color: var(--clr-primary-6);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: var(--clr-primary-6);
+  margin-left: 0.5rem;
+}
+
+.toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-6);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.toggle:hover {
+  color: var(--clr-primary-7);
+  transform: rotate(360deg);
+}
+
+.links a {
+  color: var(--clr-primary-6);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.links a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--clr-primary-7);
+  padding-left: 1.5rem;
+}
+
+.social {
+  display: none;
+}
+.linksContainer {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+/* .show-container {
+  height: 10rem;
+} */
+
+@media screen and (min-width: 800px) {
+  .center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem;
+  }
+  .header {
+    padding: 0;
+  }
+  .toggle {
+    display: none;
+  }
+  .linksContainer {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.6rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social {
+    display: flex;
+    margin-top: 5px;
+  }
+  .social a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-6);
+    transition: var(--transition);
+    font-size: 1.45rem;
+  }
+  .social a:hover {
+    color: var(--clr-primary-7);
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { GiRunningNinja, GiRunningShoe } from "react-icons/gi";
 import { links, social } from "../data/nav_data.js";
 import Link from "next/link";
+import styles from "../styles/Navigation.module.css";
 
 const Navigation = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -19,22 +20,22 @@ const Navigation = () => {
     }
   }, [showLinks]);
   return (
-    <nav>
-      <div className="nav-center">
-        <div className="nav-header">
-          <div className="nav-header-logo">
+    <nav className={styles.nav}>
+      <div className={styles.center}>
+        <div className={styles.header}>
+          <div className={styles.logo}>
             <Link href="/">
               <a>running-passion</a>
             </Link>
-            <GiRunningNinja className="nav-header-icon" />
+            <GiRunningNinja className={styles.icon} />
           </div>
 
-          <button className="nav-toggle" onClick={toggleLinks}>
+          <button className={styles.toggle} onClick={toggleLinks}>
             <GiRunningShoe size={30} />
           </button>
         </div>
-        <div className="links-container" ref={linksContainerRef}>
-          <ul className="links" ref={linksRef}>
+        <div className={styles.linksContainer} ref={linksContainerRef}>
+          <ul className={styles.links} ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
               return (
@@ -45,7 +46,7 @@ const Navigation = () => {
             })}
           </ul>
         </div>
-        <ul className="social-icons">
+        <ul className={styles.social}>
           {social.map((socialIcon) => {
             const { id, url, icon } = socialIcon;
             return (
