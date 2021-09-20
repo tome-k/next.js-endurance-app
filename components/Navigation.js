@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { GiRunningNinja, GiRunningShoe } from "react-icons/gi";
-import { links, social } from "../data/nav_data.js";
+import { links, social } from "../data/navigation-data.js";
 import Link from "next/link";
 import styles from "../styles/Navigation.module.css";
 
@@ -21,6 +21,7 @@ const Navigation = () => {
       linksContainerRef.current.style.height = "0px";
     }
   }, [showLinks]);
+
   return (
     <nav className={styles.nav}>
       <div className={styles.center}>
