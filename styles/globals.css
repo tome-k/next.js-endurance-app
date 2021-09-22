@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Euphoria+Script&family=Finger+Paint&family=Henny+Penny&family=Nosifer&family=Qwigley&family=WindSong:wght@400;500&display=swap");
 
 :root {
   /* dark shades of primary color*/
@@ -50,8 +50,13 @@
 }
 
 body {
-  font-family: "Gluten", cursive;
-  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Aguafina Script", cursive; */
+  /* font-family: "Euphoria Script", cursive; */
+  font-family: "Finger Paint", cursive;
+  /* font-family: "Henny Penny", cursive; */
+  /* font-family: "Nosifer", cursive; */
+  /* font-family: "Qwigley", cursive; */
+  /* font-family: "WindSong", cursive; */
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
