@@ -17,7 +17,7 @@ function NotFound404() {
       <h4>page not found!</h4>
       <small>
         After 10 seconds you will be automatically redirected to the home page
-        or press it back{" "}
+        or press go back{" "}
       </small>
       <Link href="/">
         <a>go back</a>
