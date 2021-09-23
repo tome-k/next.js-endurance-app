@@ -5,7 +5,14 @@
 }
 
 .heroImage {
-  filter: brightness(33%);
-  /* object-position: 50% 75%; */
+  filter: brightness(35%);
+  object-position: 50% 0%;
   z-index: -3;
+}
+
+.inner {
+  color: #fff;
+  position: absolute;
+  bottom: 20%;
+  left: 220px;
 }
