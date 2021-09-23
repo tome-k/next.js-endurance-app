@@ -1,4 +1,4 @@
-.nav {
+.navigation {
   font-family: "Orbitron", sans-serif;
   position: sticky;
   top: 0;
@@ -7,7 +7,7 @@
   box-shadow: var(--dark-shadow);
 }
 
-.navNav {
+.nav {
   /* border: 1px solid red; */
 }
 
@@ -15,26 +15,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.875rem 0.6rem;
 }
 
 .logo {
-  margin-top: 8px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
 .logo a {
-  /* font-family: "Black Ops One", cursive; */
   font-family: "Orbitron", sans-serif;
   color: var(--clr-primary-6);
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .icon {
-  font-size: 1.6rem;
+  font-size: 27px;
   color: var(--clr-primary-6);
   margin-left: 0.5rem;
 }
@@ -44,32 +42,31 @@
   color: var(--clr-primary-6);
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
+  transition: transform 500ms ease;
   cursor: pointer;
 }
 .toggle:hover {
   color: var(--clr-primary-7);
-  transform: rotate(360deg);
+  transform: rotate(90deg);
 }
 
 .links a {
-  color: #fff;
-  font-size: 1rem;
-  text-transform: capitalize;
+  color: var(--clr-primary-6);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: var(--spacing);
   display: block;
   padding: 0.5rem 1rem;
-  transition: var(--transition);
-}
-.links a:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--clr-primary-7);
-  padding-left: 1.5rem;
+  transition: all 350ms ease-out;
 }
 
-.social {
-  display: none;
+.links a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 1.5rem;
+  opacity: 0.33;
 }
+
 .linksContainer {
   height: 0;
   overflow: hidden;
@@ -77,17 +74,17 @@
 }
 
 .show-container {
-  height: 10rem;
+  height: 50rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 760px) {
   .center {
     max-width: 1299px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.875rem;
+    padding: 1.875rem 0.6rem;
   }
   .header {
     padding: 0;
@@ -103,23 +100,10 @@
   }
   .links a {
     padding: 0;
-    margin: 0 0.6rem;
+    margin: 0 0.8rem;
   }
   .links a:hover {
     padding: 0;
     background: transparent;
-  }
-  .social {
-    display: flex;
-    margin-top: 5px;
-  }
-  .social a {
-    margin: 0 0.5rem;
-    color: var(--clr-primary-6);
-    transition: var(--transition);
-    font-size: 1.45rem;
-  }
-  .social a:hover {
-    color: var(--clr-primary-7);
   }
 }

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { GiRunningNinja, GiRunningShoe } from "react-icons/gi";
-import { links, social } from "../data/navigation-data.js";
+import { VscMenu } from "react-icons/vsc";
+import { GiFootprint } from "react-icons/gi";
+import { links } from "../data/navigation-data.js";
 import Link from "next/link";
 import styles from "../styles/Navigation.module.css";
 
@@ -23,19 +24,19 @@ const Navigation = () => {
   }, [showLinks]);
 
   return (
-    <header className={styles.nav}>
-      <nav className={styles.navNav}>
+    <header className={styles.navigation}>
+      <nav className={styles.nav}>
         <div className={styles.center}>
           <div className={styles.header}>
             <div className={styles.logo}>
               <Link href="/">
                 <a>running-passion</a>
               </Link>
-              <GiRunningNinja className={styles.icon} />
+              <GiFootprint className={styles.icon} />
             </div>
 
             <button className={styles.toggle} onClick={toggleLinks}>
-              <GiRunningShoe size={30} />
+              <VscMenu size={30} />
             </button>
           </div>
           <div className={styles.linksContainer} ref={linksContainerRef}>
@@ -44,26 +45,14 @@ const Navigation = () => {
                 const { id, url, text } = link;
                 return (
                   <li key={id} onClick={toggleLinks}>
-                    <Link href={url}>{text}</Link>
+                    <Link href={url}>
+                      <a>{text}</a>
+                    </Link>
                   </li>
                 );
               })}
             </ul>
           </div>
-          <ul className={styles.social}>
-            {social.map((socialIcon) => {
-              const { id, url, icon } = socialIcon;
-              return (
-                <li key={id}>
-                  <Link href={url}>
-                    <a target="_blank" rel="noreferrer">
-                      {icon}
-                    </a>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
         </div>
       </nav>
     </header>

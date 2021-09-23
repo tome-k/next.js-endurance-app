@@ -1,4 +1,3 @@
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 export const links = [
   {
     id: 1,
@@ -24,23 +23,5 @@ export const links = [
     id: 5,
     url: "/contact",
     text: "contact",
-  },
-];
-
-export const social = [
-  {
-    id: 1,
-    url: "https://www.youtube.com",
-    icon: <FaYoutube />,
-  },
-  {
-    id: 2,
-    url: "https://www.twitter.com",
-    icon: <FaTwitter />,
-  },
-  {
-    id: 3,
-    url: "https://www.instagram.com",
-    icon: <FaInstagram />,
   },
 ];

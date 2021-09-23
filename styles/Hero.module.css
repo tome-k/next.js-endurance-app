@@ -6,5 +6,6 @@
 
 .heroImage {
   filter: brightness(33%);
+  /* object-position: 50% 75%; */
   z-index: -3;
 }
