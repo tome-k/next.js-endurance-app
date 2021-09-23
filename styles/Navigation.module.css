@@ -1,10 +1,16 @@
 .nav {
+  font-family: "Orbitron", sans-serif;
   position: sticky;
   top: 0;
   z-index: 3;
-  background: rgba(19, 18, 18, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   box-shadow: var(--dark-shadow);
 }
+
+.navNav {
+  /* border: 1px solid red; */
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -20,9 +26,10 @@
 }
 
 .logo a {
-  font-family: "Aguafina Script", cursive;
+  /* font-family: "Black Ops One", cursive; */
+  font-family: "Orbitron", sans-serif;
   color: var(--clr-primary-6);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -46,8 +53,8 @@
 }
 
 .links a {
-  color: var(--clr-primary-6);
-  font-size: 0.9rem;
+  color: #fff;
+  font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;

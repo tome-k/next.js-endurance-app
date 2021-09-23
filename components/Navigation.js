@@ -24,7 +24,7 @@ const Navigation = () => {
 
   return (
     <header className={styles.nav}>
-      <nav>
+      <nav className={styles.navNav}>
         <div className={styles.center}>
           <div className={styles.header}>
             <div className={styles.logo}>
