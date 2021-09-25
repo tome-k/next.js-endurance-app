@@ -13,6 +13,36 @@
 .inner {
   color: #fff;
   position: absolute;
+  left: 13%;
   bottom: 20%;
-  left: 220px;
+}
+
+.inner > button {
+  display: inline-block;
+  position: relative;
+  margin-top: 1rem;
+  background: transparent;
+  color: #fff;
+  padding: 1.25em 2em;
+  outline: 1px solid #fff;
+  outline-offset: -0.5em;
+  min-width: 140px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 400ms ease-in-out;
+}
+
+.inner > button:hover {
+  outline: none;
+  outline-offset: none;
+  color: #000;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 599px) {
+  .inner {
+    left: 8%;
+  }
 }

@@ -14,8 +14,9 @@ function Hero() {
       />
       <div className={styles.inner}>
         <h4>Go For Running</h4>
-        <h2>Cracovia Marathon</h2>
-        <button>Run Now</button>
+        <h2>Mountain Marathon</h2>
+        <h3>October 10 2021</h3>
+        <button>Sign in</button>
       </div>
     </section>
   );
