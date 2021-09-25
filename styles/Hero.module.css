@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .heroImage {
@@ -13,7 +14,7 @@
 .inner {
   color: #fff;
   position: absolute;
-  left: 13%;
+  left: 14%;
   bottom: 20%;
 }
 
@@ -26,6 +27,8 @@
   padding: 1.25em 2em;
   outline: 1px solid #fff;
   outline-offset: -0.5em;
+  border-radius: 5px;
+  border: 1px solid #fff;
   min-width: 140px;
   text-transform: uppercase;
   font-weight: 700;
