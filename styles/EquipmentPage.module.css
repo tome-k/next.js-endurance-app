@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+.icon {
+  max-width: 100%;
+  max-height: 100%;
+}
