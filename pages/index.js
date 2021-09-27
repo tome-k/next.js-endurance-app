@@ -2,8 +2,10 @@ import Head from "next/head";
 import Divider from "../components/Divider";
 import Events from "../components/Events";
 import Hero from "../components/Hero";
+import Weather from "../components/Weather";
+import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -12,8 +14,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Weather data={data} />
       <Divider />
       <Events />
     </>
   );
+}
+
+// This gets called on every request
+export async function getServerSideProps() {
+  // API_KEY
+  const key = process.env.API_KEY;
+  // Fetch data from external API
+  const res = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=50.08&lon=19.91&units=metric&appid=${key}`
+  );
+  const data = await res.json();
+
+  // Pass data to the page via props
+  return { props: { data } };
 }
