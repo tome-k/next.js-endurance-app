@@ -2,8 +2,7 @@ import Head from "next/head";
 import Divider from "../components/Divider";
 import Events from "../components/Events";
 import Hero from "../components/Hero";
-import Weather from "../components/Weather";
-import styles from "../styles/Home.module.css";
+import Article from "../components/Article";
 
 export default function Home({ data }) {
   return (
@@ -14,7 +13,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <Weather data={data} />
+      <Article data={data} />
       <Divider />
       <Events />
     </>

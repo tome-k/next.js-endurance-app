@@ -7,15 +7,11 @@
   box-shadow: var(--dark-shadow);
 }
 
-.nav {
-  /* border: 1px solid red; */
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.875rem 0.6rem;
+  padding: 1.875rem 0.7rem;
 }
 
 .logo {
@@ -84,7 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.875rem 0.6rem;
+    padding: 1.875rem 0.7rem;
   }
   .header {
     padding: 0;
