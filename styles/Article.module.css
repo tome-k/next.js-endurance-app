@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.article {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 6.6rem;
+  max-width: 70%;
+  border-radius: 5px;
+}
+
+.img {
+  z-index: -3;
+  filter: brightness(20%);
+}
+
+.card {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/run_11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20rem;
+  flex-direction: column;
+  box-shadow: 0 0 10px 5px #e1e5ee;
+  border-radius: 5px;
+  max-width: 30%;
+  padding: 1.5rem 0;
+}
+
+.icon {
+  background-color: rgba(178, 207, 231, 0.315);
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.body {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.body h3 {
+  text-decoration: underline;
+}
+.body p {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 599px) {
+  .article {
+    padding: 3rem;
+  }
+}
