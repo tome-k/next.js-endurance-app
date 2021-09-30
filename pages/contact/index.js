@@ -1,14 +1,17 @@
 import Divider from "../../components/Divider";
 import Form from "../../components/Form";
-import styles from "../../styles/Contact.module.css";
 
 function ContactPage() {
   return (
-    <div className="">
-      <Divider />
+    <>
+      <Divider img="/images/run_02.jpg" title="Let's run!" position="bottom" />
       <Form />
-      <Divider />
-    </div>
+      <Divider
+        img="/images/run_24.jpg"
+        title="Get some endorphin !"
+        position="center"
+      />
+    </>
   );
 }
 
