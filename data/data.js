@@ -1,4 +1,11 @@
-import { FaInstagram, FaFacebook, FaYoutube, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaFacebookSquare,
+  FaYoutube,
+  FaTwitter,
+} from "react-icons/fa";
+import { GiFootprint } from "react-icons/gi";
 
 export const links = [
   {
@@ -31,8 +38,8 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: "https://www.twitter.com",
-    icon: <FaFacebook />,
+    url: "/",
+    icon: <GiFootprint />,
   },
   {
     id: 2,
@@ -41,12 +48,17 @@ export const social = [
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
+    url: "https://www.instagram.com",
     icon: <FaInstagram />,
   },
   {
     id: 4,
-    url: "https://www.twitter.com",
+    url: "https://www.youtube.com",
     icon: <FaYoutube />,
+  },
+  {
+    id: 5,
+    url: "https://www.facebook.com",
+    icon: <FaFacebookSquare />,
   },
 ];

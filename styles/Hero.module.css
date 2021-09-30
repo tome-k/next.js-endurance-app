@@ -37,11 +37,16 @@
   transition: all 400ms ease-in-out;
 }
 
-.inner > button:hover {
+.inner button:hover,
+.inner button a:hover {
   outline: none;
-  outline-offset: none;
   color: #000;
+  outline-offset: none;
   background-color: #fff;
+}
+
+.inner button a {
+  color: #fff;
 }
 
 @media screen and (max-width: 599px) {
