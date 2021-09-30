@@ -14,7 +14,7 @@ export default function Home({ data }) {
       </Head>
       <Hero />
       <Article data={data} />
-      <Divider />
+      <Divider img="/images/run_02.jpg" title="Let's Run!" position="center" />
       <Events />
     </>
   );
