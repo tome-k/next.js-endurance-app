@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { VscMenu } from "react-icons/vsc";
 import { GiFootprint } from "react-icons/gi";
-import { links } from "../data/navigation-data.js";
+import { links } from "../data/data.js";
 import Link from "next/link";
 import styles from "../styles/Navigation.module.css";
 

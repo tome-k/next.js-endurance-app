@@ -48,7 +48,7 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.5s ease-out;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .icon:hover {
@@ -58,8 +58,8 @@
 
 @media (max-width: 699px) {
   .footer > p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }

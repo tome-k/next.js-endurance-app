@@ -1,6 +1,7 @@
 import styles from "../styles/Footer.module.css";
+import { social } from "../data/data.js";
 import Link from "next/link";
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { GiFootprint } from "react-icons/gi";
 
 function Footer() {
   return (
@@ -9,32 +10,26 @@ function Footer() {
         <p>
           &copy; {new Date().getFullYear()}{" "}
           <span>
-            running-passion created by mariog8 <br></br>
+            <GiFootprint className={styles.icon} />{" "}
           </span>
-          Built with{" "}
           <Link href="https://www.nextjs.com/">
             <a target="_blank" rel="noreferrer" className={styles.footerLink}>
-              Next.js
+              next.js
             </a>
           </Link>
         </p>
-        <div className={styles.social}>
-          <Link href="https://instagram.com">
-            <a target="_blank" rel="noreferrer">
-              <FaInstagram className={styles.icon} />
-            </a>
-          </Link>
-          <Link href="https://facebook.com">
-            <a target="_blank" rel="noreferrer">
-              <FaFacebook className={styles.icon} />
-            </a>
-          </Link>
-          <Link href="https://youtube.com">
-            <a target="_blank" rel="noreferrer">
-              <FaYoutube className={styles.icon} />
-            </a>
-          </Link>
-        </div>
+        <ul className={styles.social}>
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            return (
+              <Link key={id} href={url}>
+                <a className={styles.icon} target="_blank" rel="noreferrer">
+                  {icon}
+                </a>
+              </Link>
+            );
+          })}
+        </ul>
       </footer>
     </div>
   );
