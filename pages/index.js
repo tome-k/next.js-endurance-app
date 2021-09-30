@@ -16,6 +16,11 @@ export default function Home({ data }) {
       <Article data={data} />
       <Divider img="/images/run_02.jpg" title="Let's Run!" position="center" />
       <Events />
+      <Divider
+        img="/images/running_30.jpg"
+        title="Let's Run!"
+        position="bottom"
+      />
     </>
   );
 }
