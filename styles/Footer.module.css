@@ -2,17 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-top: auto;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/run_02.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   max-height: 3rem;
   padding-top: 5rem;
   padding-bottom: 4rem;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .footer > p {
   color: var(--clr-primary-6);
@@ -22,7 +29,31 @@
 
 .footerLink {
   text-decoration: none;
-  color: blue;
+  color: var(--link-color);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.social :not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.icon {
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  font-size: 1.9rem;
+}
+
+.icon:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
 }
 
 @media (max-width: 699px) {

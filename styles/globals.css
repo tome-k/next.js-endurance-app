@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@400;500;700&family=Orbitron:wght@400;500;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap");
 
 :root {
+  --link-color: hsl(245, 86%, 36%);
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   /* --clr-accent-100: hsl(142, 90%, 61%); */

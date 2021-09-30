@@ -1,5 +1,6 @@
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -17,6 +18,23 @@ function Footer() {
             </a>
           </Link>
         </p>
+        <div className={styles.social}>
+          <Link href="https://instagram.com">
+            <a target="_blank" rel="noreferrer">
+              <FaInstagram className={styles.icon} />
+            </a>
+          </Link>
+          <Link href="https://facebook.com">
+            <a target="_blank" rel="noreferrer">
+              <FaFacebook className={styles.icon} />
+            </a>
+          </Link>
+          <Link href="https://youtube.com">
+            <a target="_blank" rel="noreferrer">
+              <FaYoutube className={styles.icon} />
+            </a>
+          </Link>
+        </div>
       </footer>
     </div>
   );

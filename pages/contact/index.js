@@ -8,7 +8,7 @@ function ContactPage() {
       <Form />
       <Divider
         img="/images/run_24.jpg"
-        title="Get some endorphin !"
+        title="Get some endorphin!"
         position="center"
       />
     </>
