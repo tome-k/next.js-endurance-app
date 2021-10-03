@@ -29,6 +29,9 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --white: hsl(0, 0%, 100%);
+  --card-blue: hsl(219, 30%, 18%);
+  --bg-blue: hsl(216, 53%, 9%);
 }
 
 *,

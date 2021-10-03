@@ -3,6 +3,7 @@ import Divider from "../components/Divider";
 import Events from "../components/Events";
 import Hero from "../components/Hero";
 import Article from "../components/Article";
+import Testimonial from "../components/Testimonial";
 
 export default function Home({ data }) {
   return (
@@ -21,6 +22,7 @@ export default function Home({ data }) {
         title="Let's Run!"
         position="bottom"
       />
+      <Testimonial />
     </>
   );
 }

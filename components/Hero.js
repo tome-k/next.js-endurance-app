@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "../styles/Hero.module.css";
-import Link from "next/link";
 import Button from "./Button";
 
 function Hero() {
