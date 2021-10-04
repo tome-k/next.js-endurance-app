@@ -5,7 +5,7 @@ function Events() {
   return (
     <section className={styles.about}>
       <div className={styles.header}>
-        <h1>Choose your event</h1>
+        <h2>Choose your event</h2>
       </div>
       <div className={styles.wrapper}>
         <AwesomeCard

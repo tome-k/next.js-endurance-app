@@ -1,12 +1,18 @@
 import styles from "../styles/Article.module.css";
 import Image from "next/image";
+import Error from "next/error";
 
-function Weather({ data }) {
+function Weather({ data, errorCode }) {
   const date = new Date().toLocaleString([], {
     year: "numeric",
     month: "numeric",
     day: "numeric",
   });
+
+  if (errorCode) {
+    return <Error statusCode={errorCode} />;
+  }
+
   return (
     <section className={styles.wrapper}>
       <article className={styles.article}>

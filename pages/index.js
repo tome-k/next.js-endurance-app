@@ -36,7 +36,6 @@ export async function getServerSideProps() {
     `https://api.openweathermap.org/data/2.5/weather?lat=50.08&lon=19.91&units=metric&appid=${key}`
   );
   const data = await res.json();
-
   // Pass data to the page via props
   return { props: { data } };
 }

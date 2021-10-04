@@ -4,11 +4,10 @@
   width: 100%;
 }
 
-.header > h1 {
-  padding-top: 7rem;
-  margin-left: 12rem;
-  margin-bottom: 2rem;
-  font-size: 4.5rem;
+.header > h2 {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 4rem;
   line-height: 1.4;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.76);
@@ -20,14 +19,17 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 3rem;
   padding: 1rem;
   margin: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
-  .header h1 {
+  .header h2 {
     font-size: 3rem;
     margin-left: 1.5rem;
+  }
+  .wrapper {
+    justify-content: center;
   }
 }
