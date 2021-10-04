@@ -5,7 +5,7 @@ function Button(props) {
   if (props.link) {
     return (
       <Link href={props.link}>
-        <a className={styles.btn} target="_blank" rel="noreferrer">
+        <a className={styles.btn} target={props.target} rel="noreferrer">
           {props.children}
         </a>
       </Link>

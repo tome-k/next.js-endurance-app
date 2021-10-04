@@ -1,9 +1,13 @@
 import Testimonial from "./Testimonial";
 import TestimonialsWrapper from "./TestimonialsWrapper";
+import styles from "../styles/Testimonials.module.css";
 
 function Testimonials() {
   return (
     <>
+      <div className={styles.heading}>
+        <h2>Testimonials</h2>
+      </div>
       <TestimonialsWrapper>
         <Testimonial
           img="/images/runner_000.jpg"

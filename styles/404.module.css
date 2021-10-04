@@ -1,33 +1,43 @@
 .container {
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  z-index: 1;
+}
+
+.img {
+  filter: brightness(50%);
+  z-index: -3;
+  object-position: center;
+  object-fit: cover;
 }
 
 .container h2 {
-  font-size: 5rem;
-  color: red;
+  font-size: 10rem;
 }
 
 .container h4 {
-  font-size: 1.5rem;
+  font-size: 5rem;
 }
-
-.container a {
-  margin-top: 1rem;
-  border: 2px solid #f44336;
-  background-color: white;
-  border-radius: 5px;
-  color: #f44336;
-  padding: 0.75rem 1.8rem;
+.container small {
   font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 300ms ease-out;
 }
 
-.container a:hover {
-  background: #f44336;
-  color: white;
+@media screen and (max-width: 768px) {
+  .container h2 {
+    font-size: 5rem;
+  }
+  .container h4 {
+    font-size: 3rem;
+  }
+  .container small {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .img {
+    object-position: 66% 50%;
+  }
 }
