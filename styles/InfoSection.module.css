@@ -6,20 +6,6 @@
   gap: 3rem;
 }
 
-.article {
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  padding: 6.6rem;
-  max-width: 70%;
-  border-radius: 5px;
-}
-
-.img {
-  z-index: -3;
-  filter: brightness(20%);
-}
-
 .card {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/run_11.jpg");

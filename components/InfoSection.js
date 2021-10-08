@@ -1,6 +1,7 @@
 import styles from "../styles/InfoSection.module.css";
 import Image from "next/image";
 import Error from "next/error";
+import Article from "./Article";
 
 function InfoSection({ data, errorCode }) {
   const date = new Date().toLocaleString([], {
@@ -9,31 +10,18 @@ function InfoSection({ data, errorCode }) {
     day: "numeric",
   });
 
-  if (errorCode) {
-    return <Error statusCode={errorCode} />;
+  if (!data || errorCode) {
+    return (
+      <Error
+        statusCode="503 Service Unavailable"
+        title="External Data Fetching Error! We apologize for any inconvenience. Please Try again later"
+      />
+    );
   }
 
   return (
     <section className={styles.wrapper}>
-      <article className={styles.article}>
-        <Image
-          src="/images/run_02.jpg"
-          alt="stadium"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          className={styles.img}
-        />
-        <h1>Cracovia Marathon</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
-          hic vitae maiores at tempore mollitia, repellendus reiciendis quisquam
-          aliquam! Voluptate consequuntur natus ex provident, deserunt suscipit
-          consequatur, sint commodi at, assumenda facilis ducimus! aliquam!
-          Voluptate consequuntur natus ex provident, deserunt suscipit
-          consequatur, sint commodi at, assumenda facilis ducimus!
-        </p>
-      </article>
+      <Article />
       <div className={styles.card}>
         <Image
           className={styles.icon}
