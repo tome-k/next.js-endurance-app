@@ -41,7 +41,7 @@ export async function getServerSideProps(context) {
   if (!data) {
     return {
       redirect: {
-        destination: "/_error",
+        destination: "/500",
         permanent: false,
       },
     };

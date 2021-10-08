@@ -1,11 +1,10 @@
-import Link from "next/link";
 import styles from "../styles/404.module.css";
 import router from "next/router";
 import { useEffect } from "react";
 import Image from "next/image";
 import Button from "../components/Button";
 
-function NotFound404() {
+function Page404() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.replace("/");
@@ -34,4 +33,4 @@ function NotFound404() {
   );
 }
 
-export default NotFound404;
+export default Page404;
