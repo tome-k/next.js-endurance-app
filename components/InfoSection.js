@@ -1,8 +1,8 @@
-import styles from "../styles/Article.module.css";
+import styles from "../styles/InfoSection.module.css";
 import Image from "next/image";
 import Error from "next/error";
 
-function Weather({ data, errorCode }) {
+function InfoSection({ data, errorCode }) {
   const date = new Date().toLocaleString([], {
     year: "numeric",
     month: "numeric",
@@ -60,4 +60,4 @@ function Weather({ data, errorCode }) {
   );
 }
 
-export default Weather;
+export default InfoSection;

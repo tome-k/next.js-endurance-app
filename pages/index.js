@@ -2,7 +2,7 @@ import Head from "next/head";
 import Divider from "../components/Divider";
 import Events from "../components/Events";
 import Hero from "../components/Hero";
-import Article from "../components/Article";
+import InfoSection from "../components/InfoSection";
 import Testimonials from "../components/Testimonials";
 
 export default function Home({ data }) {
@@ -14,7 +14,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <Article data={data} />
+      <InfoSection data={data} />
       <Divider img="/images/run_02.jpg" title="Let's Run!" position="center" />
       <Events />
       <Divider
