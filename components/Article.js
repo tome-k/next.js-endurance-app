@@ -1,20 +1,9 @@
-import styles from "../styles/Article.module.css";
 import Image from "next/image";
-import Error from "next/error";
+import styles from "../styles/Article.module.css";
 
-function Weather({ data, errorCode }) {
-  const date = new Date().toLocaleString([], {
-    year: "numeric",
-    month: "numeric",
-    day: "numeric",
-  });
-
-  if (errorCode) {
-    return <Error statusCode={errorCode} />;
-  }
-
+function Article() {
   return (
-    <section className={styles.wrapper}>
+    <>
       <article className={styles.article}>
         <Image
           src="/images/run_02.jpg"
@@ -34,30 +23,8 @@ function Weather({ data, errorCode }) {
           consequatur, sint commodi at, assumenda facilis ducimus!
         </p>
       </article>
-      <div className={styles.card}>
-        <Image
-          className={styles.icon}
-          src={`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}
-          alt="forecast icon"
-          width={65}
-          height={65}
-          quality={100}
-        />
-        <div className={styles.body}>
-          <p>
-            Current Weather <br /> {data.weather[0].description}
-          </p>
-          <h4>{date}</h4>
-          <h2>{data.sys.country}</h2>
-          <h3>{data.name}</h3>
-          <h4>Temp: {data.main.temp} &#8451;</h4>
-          <h4>Pressure: {data.main.pressure} hPa</h4>
-          <h4>Wind: {data.wind.speed} m/s</h4>
-          <h4>Visibility: {data.visibility} m</h4>
-        </div>
-      </div>
-    </section>
+    </>
   );
 }
 
-export default Weather;
+export default Article;
