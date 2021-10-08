@@ -6,9 +6,11 @@ function Layout({ children }) {
   const router = useRouter();
   return (
     <>
-      {router.pathname !== "/404" && <Navigation />}
+      {router.pathname !== "/404" && router.pathname !== "/500" && (
+        <Navigation />
+      )}
       <main className="main-content">{children}</main>
-      {router.pathname !== "/404" && <Footer />}
+      {router.pathname !== "/404" && router.pathname !== "/500" && <Footer />}
     </>
   );
 }
