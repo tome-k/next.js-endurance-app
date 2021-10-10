@@ -9,8 +9,11 @@ export default function Home({ data, errorCode }) {
   return (
     <>
       <Head>
-        <title>running-passion</title>
-        <meta name="description" content="Running-passion Website" />
+        <title>home | running-passion</title>
+        <meta
+          name="description"
+          content="Website about the passion of running, blog, weather, plans , equipment"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />

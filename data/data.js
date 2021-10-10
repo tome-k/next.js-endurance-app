@@ -1,6 +1,5 @@
 import {
   FaInstagram,
-  FaFacebook,
   FaFacebookSquare,
   FaYoutube,
   FaTwitter,
