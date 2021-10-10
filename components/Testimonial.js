@@ -10,7 +10,7 @@ function Testimonial({ text, img, name, desc }) {
         <div className={styles.testimonial__img}>
           <Image
             src={img}
-            alt={name}
+            alt="Miniature portrait of a runner"
             objectFit="cover"
             width={100}
             height={100}
