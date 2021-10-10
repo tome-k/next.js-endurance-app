@@ -10,7 +10,7 @@ function AwesomeCard(props) {
         layout="fill"
         quality={100}
         className={styles.about_img}
-        alt="Programming languages, frameworks and technologies, Python"
+        alt="City, monuments, skyscrapers, traffic"
       />
       <div className={styles.about_card_content}>
         <h4 className={styles.about_card_title}>{props.title}</h4>

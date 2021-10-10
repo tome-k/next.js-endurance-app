@@ -12,7 +12,7 @@ function Divider({ img, title, position }) {
         objectPosition={position}
         quality={100}
         className={styles.img}
-        alt="track and field track"
+        alt="Athletics stadium treadmill, rival runners"
       />
     </div>
   );

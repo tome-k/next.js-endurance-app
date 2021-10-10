@@ -17,7 +17,7 @@ function Page404() {
       <Image
         src="/images/not_found_000.jpg"
         layout="fill"
-        alt="landscape runner photo"
+        alt="An exhausted runner who sits at the finish line of an athletics track"
         // objectFit="cover"
         quality={100}
         className={styles.img}

@@ -8,7 +8,7 @@ function Page500() {
       <Image
         src="/images/server_000.jpg"
         layout="fill"
-        alt="landscape runner photo"
+        alt="Server room, full of cables and controls"
         objectFit="cover"
         quality={100}
         className={styles.img}
