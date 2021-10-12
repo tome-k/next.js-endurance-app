@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  font-size: 3.3rem;
+  font-size: 3rem;
   padding: 1rem;
 }
 
@@ -81,12 +81,14 @@
   border-radius: 5px;
   font-family: inherit;
   border: 2px solid transparent;
+  transition: 400ms ease-out;
 }
 
 .btn:hover {
-  color: #000;
+  color: var(--clr-neutral-900);
   background-color: var(--clr-white);
   border: 2px solid var(--clr-neutral-900);
+  text-shadow: -2px -2px 4px black;
 }
 
 @media (max-width: 699px) {
