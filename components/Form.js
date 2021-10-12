@@ -1,5 +1,6 @@
 import styles from "../styles/Form.module.css";
-import { BiMessageRoundedDots } from "react-icons/bi";
+import { SiMinutemailer } from "react-icons/si";
+
 import { useEffect } from "react";
 
 function Form() {
@@ -16,9 +17,9 @@ function Form() {
       <div className={styles.auth}>
         <h2 className={styles.header}>
           Contact
-          <BiMessageRoundedDots size={42} className={styles.icon} />
+          <SiMinutemailer size={50} className={styles.icon} />
         </h2>
-        <form action="https://formspree.io/f/xrgrkkyz" method="POST">
+        <form action="" method="POST">
           <div>
             <label htmlFor="firstname">First Name</label>
             <input type="text" id="firstname" name="firstname" required />

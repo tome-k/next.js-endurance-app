@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Divider from "../../components/Divider";
+import Form from "../../components/Form";
 import Map from "../../components/Map";
 import styles from "../../styles/Contact.module.css";
 
@@ -19,11 +19,10 @@ function ContactPage() {
         <h5>every wednesday and sunday</h5>
         <h6>at 6 PM</h6>
         <Map />
-        <Divider
-          img="/images/run_24.jpg"
-          title="Get some endorphin!"
-          position="center"
-        />
+        <div className={styles.form__container}>
+          <h3>Write to Us</h3>
+          <Form />
+        </div>
       </section>
     </>
   );

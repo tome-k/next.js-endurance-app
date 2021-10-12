@@ -7,7 +7,7 @@ function Map() {
     latitude: 50.06,
     longitude: 19.911,
     zoom: 13.5,
-    width: "100%",
+    width: "80%",
     height: "100%",
   });
 
