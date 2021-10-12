@@ -24,7 +24,6 @@ function ContactPage() {
           title="Get some endorphin!"
           position="center"
         />
-        {/* <Form /> */}
       </section>
     </>
   );

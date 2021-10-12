@@ -1,31 +1,44 @@
 import styles from "../styles/Form.module.css";
+import { BiMessageRoundedDots } from "react-icons/bi";
+import { useEffect } from "react";
 
 function Form() {
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      for (const form of document.getElementsByTagName("form")) {
+        form.reset();
+      }
+    };
+  }, []);
+
   return (
-    <section className={styles.form}>
-      <div className={styles.container}>
-        <h3>Contact Us</h3>
-        <form method="POST" action="send">
-          <div className={styles.control}>
-            <label>Full Name</label>
-            <input type="text" name="fullname" required />
+    <div className={styles.form_container}>
+      <div className={styles.auth}>
+        <h2 className={styles.header}>
+          Contact
+          <BiMessageRoundedDots size={42} className={styles.icon} />
+        </h2>
+        <form action="https://formspree.io/f/xrgrkkyz" method="POST">
+          <div>
+            <label htmlFor="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required />
           </div>
-          <div className={styles.control}>
-            <label>Email Address</label>
-            <input type="email" name="email" required />
+          <div>
+            <label htmlFor="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required />
           </div>
-          <div className={styles.control}>
-            <label>Message</label>
-            <textarea name="message" rows="5" required></textarea>
+          <div>
+            <label htmlFor="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
           </div>
-          <div className={styles.control}>
-            <button type="submit" className={styles.btn}>
-              Submit
-            </button>
+          <div>
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
           </div>
+          <input type="submit" value="Send Message" className={styles.btn} />
         </form>
       </div>
-    </section>
+    </div>
   );
 }
 
