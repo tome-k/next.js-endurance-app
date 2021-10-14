@@ -1,11 +1,9 @@
 import styles from "../styles/Form.module.css";
 import { SiMinutemailer } from "react-icons/si";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
-function Form(props) {
-  const [isInvalid, setIsInvalid] = useState(false);
-
+function Form() {
   useEffect(() => {
     window.onbeforeunload = () => {
       for (const form of document.getElementsByTagName("form")) {
@@ -22,21 +20,17 @@ function Form(props) {
     const enteredEmail = emailInputRef.current.value;
     const enteredMsg = msgInputRef.current.value;
 
-    if (
-      !enteredEmail ||
-      enteredEmail.trim() === "" ||
-      !enteredEmail.includes("@") ||
-      !enteredMsg ||
-      enteredMsg.trim() === ""
-    ) {
-      setIsInvalid(true);
-      return;
-    }
+    fetch("/api/feedback", {
+      method: "POST",
+      body: JSON.stringify({ email: enteredEmail, message: enteredMsg }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
 
-    props.onAddMsg({
-      email: enteredEmail,
-      message: enteredMsg,
-    });
+    e.target.reset();
   };
 
   return (
@@ -49,11 +43,11 @@ function Form(props) {
         <form onSubmit={sendMsgHandler}>
           <div>
             <label htmlFor="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" required />
+            <input type="text" id="firstname" name="firstname" />
           </div>
           <div>
             <label htmlFor="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" required />
+            <input type="text" id="lastname" name="lastname" />
           </div>
           <div>
             <label htmlFor="email">Email Address</label>
@@ -74,8 +68,12 @@ function Form(props) {
               ref={msgInputRef}
             ></textarea>
           </div>
-          <input type="submit" value="Send Message" className={styles.btn} />
-          {/* <button className={styles.btn}>Submit</button> */}
+          <input
+            type="submit"
+            value="Send Message"
+            className={styles.btn}
+            onSubmit={sendMsgHandler}
+          />
         </form>
       </div>
     </div>

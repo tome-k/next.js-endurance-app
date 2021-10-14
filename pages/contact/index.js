@@ -3,19 +3,7 @@ import Form from "../../components/Form";
 import Map from "../../components/Map";
 import styles from "../../styles/Contact.module.css";
 
-function ContactPage(props) {
-  const addMsgHandler = (msgData) => {
-    fetch("/api/feedback", {
-      method: "POST",
-      body: JSON.stringify(msgData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  };
-
+function ContactPage() {
   return (
     <>
       <Head>
@@ -33,7 +21,7 @@ function ContactPage(props) {
         <Map />
         <div className={styles.form__container}>
           <h3>Write to Us</h3>
-          <Form onAddMsg={addMsgHandler} />
+          <Form />
         </div>
       </section>
     </>
