@@ -1,17 +1,9 @@
 import styles from "../styles/Form.module.css";
 import { SiMinutemailer } from "react-icons/si";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 function Form() {
-  useEffect(() => {
-    window.onbeforeunload = () => {
-      for (const form of document.getElementsByTagName("form")) {
-        form.reset();
-      }
-    };
-  }, []);
-
   const emailInputRef = useRef();
   const msgInputRef = useRef();
 
