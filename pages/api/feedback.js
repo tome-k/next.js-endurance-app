@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import { connectDB, insertDoc } from "../../utils/db-util";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
@@ -8,17 +9,23 @@ export default async function handler(req, res) {
       return;
     }
 
-    const client = await MongoClient.connect(process.env.MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    const db = client.db();
-    await db
-      .collection("messages")
-      .insertOne({ email: email, message: message });
+    let client;
 
-    client.close();
+    try {
+      client = await connectDB();
+    } catch (error) {
+      res.status(500).json({ message: "Connecting to DB Failed!" });
+      return;
+    }
 
-    res.status(201).json({ message: "Signed Up!" });
+    try {
+      await insertDoc(client, "messages", { email: email, message: message });
+      client.close();
+    } catch (error) {
+      res.status(500).json({ message: "Inserting DATA Failed!!" });
+      return;
+    }
+
+    res.status(201).json({ message: "Feedback Sent!" });
   }
 }

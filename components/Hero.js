@@ -17,10 +17,7 @@ function Hero() {
         <h4>Go For Running</h4>
         <h2>Mountain Marathon</h2>
         <h3>October 10 2021</h3>
-        <Button
-          link="https://mountaintrails.org/event-race-mtf/mid-mountain-marathon/"
-          target="_blank"
-        >
+        <Button link="https://findarace.com/marathons/mountain" target="_blank">
           Sign In
         </Button>
       </div>
