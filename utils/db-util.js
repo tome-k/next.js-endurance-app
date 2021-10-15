@@ -10,5 +10,6 @@ export const connectDB = async () => {
 
 export const insertDoc = async (client, collection, document) => {
   const db = client.db();
-  await db.collection(collection).insertOne(document);
+  const result = await db.collection(collection).insertOne(document);
+  return result;
 };

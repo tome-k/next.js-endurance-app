@@ -18,8 +18,13 @@ export default async function handler(req, res) {
       return;
     }
 
+    let result;
+
     try {
-      await insertDoc(client, "messages", { email: email, message: message });
+      result = await insertDoc(client, "messages", {
+        email: email,
+        message: message,
+      });
       client.close();
     } catch (error) {
       res.status(500).json({ message: "Inserting DATA Failed!!" });
