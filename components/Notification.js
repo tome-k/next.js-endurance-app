@@ -1,5 +1,6 @@
 import styles from "../styles/Notification.module.css";
 import { useContext } from "react";
+import NotificationContext from "../store/notification-context.js";
 
 function Notification(props) {
   const notificationCtx = useContext(NotificationContext);
@@ -9,18 +10,18 @@ function Notification(props) {
   let statusClasses = "";
 
   if (status === "success") {
-    statusClasses = classes.success;
+    statusClasses = styles.success;
   }
 
   if (status === "error") {
-    statusClasses = classes.error;
+    statusClasses = styles.error;
   }
 
   if (status === "pending") {
-    statusClasses = classes.pending;
+    statusClasses = styles.pending;
   }
 
-  const activeClasses = `${classes.notification} ${statusClasses}`;
+  const activeClasses = `${styles.notification} ${statusClasses}`;
 
   return (
     <div className={activeClasses} onClick={notificationCtx.hideNotification}>
