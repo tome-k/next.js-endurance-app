@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../components/Layout";
-import Notification from "../components/Notification";
 import { NotificationContextProvider } from "../store/notification-context";
 
 function MyApp({ Component, pageProps }) {
@@ -12,7 +11,6 @@ function MyApp({ Component, pageProps }) {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <Component {...pageProps} />
-        <Notification title="Test" message="this a test" status="success" />
       </Layout>
     </NotificationContextProvider>
   );
