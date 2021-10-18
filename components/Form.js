@@ -1,16 +1,23 @@
 import styles from "../styles/Form.module.css";
 import { SiMinutemailer } from "react-icons/si";
-
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import NotificationContext from "../store/notification-context";
 
 function Form() {
   const emailInputRef = useRef();
   const msgInputRef = useRef();
+  const notificationCtx = useContext(NotificationContext);
 
   const sendMsgHandler = (e) => {
     e.preventDefault();
     const enteredEmail = emailInputRef.current.value;
     const enteredMsg = msgInputRef.current.value;
+
+    notificationCtx.showNotification({
+      title: "Signing up...",
+      message: "Adding feedback in progress..",
+      status: "pending",
+    });
 
     fetch("/api/feedback", {
       method: "POST",
@@ -19,8 +26,28 @@ function Form() {
         "Content-Type": "application/json",
       },
     })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        return res.json().then((data) => {
+          throw new Error(data.message || "Something went Wrong!");
+        });
+      })
+      .then((data) => {
+        notificationCtx.showNotification({
+          title: "Success!",
+          message: "Successfully Added Your Feedback!",
+          status: "success",
+        });
+      })
+      .catch((error) => {
+        notificationCtx.showNotification({
+          title: "Error!",
+          message: error.message || "Something went wrong!",
+          status: "error",
+        });
+      });
 
     e.target.reset();
   };
