@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Form from "../../components/Form";
 
 function PlansPage() {
   return (
@@ -13,9 +12,6 @@ function PlansPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h3>plans page</h3>
-      <div className="center">
-        <Form />
-      </div>
     </>
   );
 }
