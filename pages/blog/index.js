@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function BlogPage() {
+function AllBlogPostsPage() {
   return (
     <>
       <Head>
@@ -11,9 +11,9 @@ function BlogPage() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h3>Blog Page</h3>
+      <h3>All Blog Posts Page</h3>
     </>
   );
 }
 
-export default BlogPage;
+export default AllBlogPostsPage;
