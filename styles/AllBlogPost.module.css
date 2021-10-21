@@ -1,3 +1,18 @@
-.container a {
+.blog_heading {
+  margin-top: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.blog_container {
+  background: #fff;
   color: #000;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 36rem));
+  place-content: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 1rem 2rem;
+  margin: 2.5rem 0;
 }

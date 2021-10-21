@@ -1,11 +1,11 @@
 ---
 title: 'Cracovia Marathon'
 date: 'May 5, 2018'
-excerpt: 'My first marathon. Cracovia marathon 3:45:00'
-cover_image: '/images/run_11.jpg'
+excerpt: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi rerum culpa dolorum voluptas, sit quod aliquid officia quidem qui dolore suscipit reiciendis aut!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora eligendi rerum culpa dolorum voluptas, sit quod aliquid officia quama plilu'
+cover_image: '/images/run_21.jpg'
 category: 'Long distance run'
 author: 'Mariusz Golik'
-author_image: 'https://randomuser.me/api/portraits/men/33.jpg'
+author_image: '/images/mario_xs.jpg'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
