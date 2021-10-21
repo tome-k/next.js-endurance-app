@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../../styles/AllBlogPost.module.css";
+import Post from "../../components/Post";
 
 function AllBlogPostsPage({ posts }) {
   return (
@@ -19,9 +20,7 @@ function AllBlogPostsPage({ posts }) {
       <h3>All Blog Posts Page</h3>
       <div>
         {posts.map((post, index) => (
-          <h3 key={Math.floor(Math.random() * 999)}>
-            {post.frontmatter.title}
-          </h3>
+          <Post key={index} post={post} />
         ))}
       </div>
       <div className={styles.container}>
