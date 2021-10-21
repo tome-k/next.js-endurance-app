@@ -1,11 +1,11 @@
 ---
 title: 'Cracovia Half-Marathon'
 date: 'october 10, 2017'
-excerpt: 'My first half marathon'
-cover_image: '/images/run_00.jpg'
+excerpt: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ratione voluptates sed repellendus tempora et ipsa sapiente, iure, exercitationem consequuntur eius dignissimos, labore dolorem facilis. Dignissimos ut impedit veniam, sit sed assumenda soluta ea sint alias nobis laudantium tempore iusto incidunt quam! guam'
+cover_image: '/images/run_22.jpg'
 category: 'Long distance run'
 author: 'Mariusz Golik'
-author_image: 'https://randomuser.me/api/portraits/men/15.jpg'
+author_image: '/images/mario_xs.jpg'
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->

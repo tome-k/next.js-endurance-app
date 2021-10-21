@@ -17,16 +17,11 @@ function AllBlogPostsPage({ posts }) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h3>All Blog Posts Page</h3>
-      <div>
+      <h3 className={styles.blog_heading}>Blog Posts</h3>
+      <div className={styles.blog_container}>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
-      </div>
-      <div className={styles.container}>
-        <Link href="/blog">
-          <a>All Posts</a>
-        </Link>
       </div>
     </>
   );
