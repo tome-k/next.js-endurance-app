@@ -13,7 +13,7 @@
 
 .about_img {
   filter: brightness(33%);
-  filter: grayscale(95%);
+  /* filter: grayscale(95%); */
 }
 
 .about_card:hover,

@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
-import Link from "next/link";
 import styles from "../../styles/AllBlogPost.module.css";
 import Post from "../../components/Post";
+import { sortByDate } from "../../utils/sort-by-date";
 
 function AllBlogPostsPage({ posts }) {
   return (
@@ -27,7 +27,7 @@ function AllBlogPostsPage({ posts }) {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const files = fs.readdirSync(path.join("posts"));
 
   const posts = files.map((filename) => {
@@ -47,9 +47,9 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate).slice(0, 4), // sort by date and display first four posts
     },
   };
-}
+};
 
 export default AllBlogPostsPage;
