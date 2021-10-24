@@ -1,6 +1,6 @@
 ---
 title: 'Cracovia Half-Marathon'
-date: 'october 10, 2017'
+date: 'October 10, 2017'
 excerpt: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ratione voluptates sed repellendus tempora et ipsa sapiente, iure, exercitationem consequuntur eius dignissimos, labore dolorem facilis. Dignissimos ut impedit veniam, sit sed assumenda soluta ea sint alias nobis laudantium tempore iusto incidunt quam! guam'
 cover_image: '/images/run_22.jpg'
 category: 'Long distance run'

@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../../styles/AllBlogPost.module.css";
 import Post from "../../components/Post";
+import { sortByDate } from "../../utils/sort-by-date";
 
 function AllBlogPostsPage({ posts }) {
   return (
@@ -47,7 +48,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate).slice(0, 4), // sort by date and display first four posts
     },
   };
 }
