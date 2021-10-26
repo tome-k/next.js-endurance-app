@@ -1,6 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import marked from "marked";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../../styles/SingleBlogPost.module.css";
 
 function SingleBlogPostPage({
   frontmatter: { title, category, date, cover_image, author, author_image },
@@ -8,10 +12,22 @@ function SingleBlogPostPage({
   slug,
 }) {
   return (
-    <div>
-      <h3>{date}</h3>
-      <p>{author}</p>
-    </div>
+    <>
+      <Link href="/blog">
+        <a className={styles.link}>Go Back</a>
+      </Link>
+      <div className={styles.post_container}>
+        <div className={styles.post_items}>
+          <h1 className={styles.post_title}>{title}</h1>
+          <p className={styles.post_category}>{category}</p>
+        </div>
+        <img
+          src={cover_image}
+          alt="Run Of Colors"
+          className={styles.post_img}
+        />
+      </div>
+    </>
   );
 }
 
@@ -44,6 +60,7 @@ export const getStaticProps = async ({ params: { slug } }) => {
       content,
       slug,
     },
+    revalidate: 600,
   };
 };
 
