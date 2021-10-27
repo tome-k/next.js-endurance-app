@@ -6,7 +6,7 @@ function Article() {
     <>
       <article className={styles.article}>
         <Image
-          src="/images/run_02.jpg"
+          src="/images/run_08.jpg"
           alt="stadium"
           layout="fill"
           objectFit="cover"

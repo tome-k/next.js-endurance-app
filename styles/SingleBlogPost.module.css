@@ -1,15 +1,17 @@
 .link {
-  font-size: 1rem;
-  color: #000;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: var(--link-color);
+  cursor: pointer;
 }
 
 .post_container {
-  width: 100%;
+  max-width: 75%;
   border-radius: 0.5rem;
   padding: 1.5rem 2.5rem;
-  margin-top: 1.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 60px -1px rgba(0, 0, 0, 0.1),
+    0 2px 40px -1px rgba(0, 0, 0, 0.06);
 }
 
 .post_items {
@@ -35,4 +37,48 @@
   margin: 0 auto;
   width: 100%;
   border-radius: 0.25rem;
+}
+
+.post_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(243, 244, 246);
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+.post_info_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.post_info_wrapper > h6 {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #000;
+}
+
+.post_info_img {
+  margin: 0 1rem;
+  border-radius: 50%;
+}
+
+.post_date {
+  margin-right: 1rem;
+}
+
+.post_txt {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+
+.post_txt p {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #000;
+}
+.post_txt h2 {
+  font-size: 3rem;
 }
