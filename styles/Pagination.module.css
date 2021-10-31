@@ -1,0 +1,26 @@
+.pagination_wrapper {
+  margin-top: 1.5rem;
+}
+
+.pagination_list {
+  display: flex;
+  list-style-type: none;
+  margin: 0.5rem 0;
+}
+
+.pagination_link {
+  color: #000;
+  border: 1px solid rgba(107, 114, 128);
+  border-radius: 0.25rem;
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: 0.5rem;
+  line-height: 1.25;
+  transition: 350ms ease-in-out;
+}
+
+.pagination_link:hover {
+  cursor: pointer;
+  background-color: rgb(146, 148, 153);
+}

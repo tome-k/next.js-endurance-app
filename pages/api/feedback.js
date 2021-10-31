@@ -1,4 +1,3 @@
-import { MongoClient } from "mongodb";
 import { connectDB, insertDoc } from "../../utils/db-util";
 
 export default async function handler(req, res) {
@@ -24,6 +23,7 @@ export default async function handler(req, res) {
       result = await insertDoc(client, "messages", {
         email: email,
         message: message,
+        date: new Date().toLocaleString(),
       });
       client.close();
     } catch (error) {

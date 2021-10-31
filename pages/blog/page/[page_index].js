@@ -6,6 +6,7 @@ import styles from "../../../styles/AllBlogPost.module.css";
 import Post from "../../../components/Post";
 import { sortByDate } from "../../../utils/sort-by-date";
 import { POST_PER_PAGE } from "../../../config";
+import Pagination from "../../../components/Pagination";
 
 function AllBlogPostsPage({ posts, numPages, currentPage }) {
   return (
@@ -24,13 +25,13 @@ function AllBlogPostsPage({ posts, numPages, currentPage }) {
           <Post key={index} post={post} />
         ))}
       </div>
+      <Pagination currentPage={currentPage} numPages={numPages} />
     </>
   );
 }
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync(path.join("posts"));
-
   const numPages = Math.ceil(files.length / POST_PER_PAGE);
 
   let paths = [];
