@@ -1,0 +1,7 @@
+.category_link {
+  color: var(--clr-black);
+}
+
+.category_link:hover {
+  color: var(--link-color);
+}

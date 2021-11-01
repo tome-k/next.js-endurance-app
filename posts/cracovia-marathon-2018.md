@@ -3,7 +3,7 @@ title: 'Cracovia Marathon'
 date: 'May 5, 2018'
 excerpt: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ratione voluptates sed repellendus tempora et ipsa sapiente, iure, exercitationem consequuntur eius dignissimos, labore dolorem facilis. Dignissimos ut impedit veniam, sit sed assumenda soluta ea sint alias nobis laudantium tempore'
 cover_image: '/images/run_20.jpg'
-category: 'Long distance run'
+category: 'Marathon'
 author: 'Mariusz Golik'
 author_image: '/images/mario_xs.jpg'
 ---
