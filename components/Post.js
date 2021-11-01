@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Post.module.css";
+import CategoryLabel from "./CategoryLabel";
 
 function Post({ post }) {
   return (
@@ -14,8 +15,10 @@ function Post({ post }) {
       />
 
       <div className={styles.post_category}>
-        <span className={styles.date}>{post.frontmatter.category}</span>
-        {post.frontmatter.date}
+        <span className={styles.date}>
+          <CategoryLabel>{post.frontmatter.category}</CategoryLabel>
+        </span>
+        <div>{post.frontmatter.date}</div>
       </div>
 
       <div className={styles.post_title}>
