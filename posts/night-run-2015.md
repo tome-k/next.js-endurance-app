@@ -3,7 +3,7 @@ title: 'Night Run 10k'
 date: 'June 5, 2015'
 excerpt: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ratione voluptates sed repellendus tempora et ipsa sapiente, iure, exercitationem consequuntur eius dignissimos, labore dolorem facilis. Dignissimos ut impedit veniam, sit sed assumenda soluta ea sint alias nobis laudantium tempore'
 cover_image: '/images/run_19.jpg'
-category: 'Long distance run'
+category: '10k run'
 author: 'Mariusz Golik'
 author_image: '/images/mario_xs.jpg'
 ---
