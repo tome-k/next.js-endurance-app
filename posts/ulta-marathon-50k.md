@@ -1,6 +1,6 @@
 ---
 title: 'Ultra Marathon 50k'
-date: 'May 5, 2018'
+date: 'June 5, 2019'
 excerpt: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ratione voluptates sed repellendus tempora et ipsa sapiente, iure, exercitationem consequuntur eius dignissimos, labore dolorem facilis. Dignissimos ut impedit veniam, sit sed assumenda soluta ea sint alias nobis laudantium tempore'
 cover_image: '/images/run_26.jpg'
 category: 'Ultra-Marathon'
