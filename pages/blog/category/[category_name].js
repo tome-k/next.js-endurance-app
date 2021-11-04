@@ -5,6 +5,7 @@ import Post from "../../../components/Post";
 import styles from "../../../styles/AllBlogPost.module.css";
 import { getPosts } from "../../../utils/post";
 import matter from "gray-matter";
+import CategoryList from "../../../components/CategoryList";
 
 export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
@@ -18,6 +19,7 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h3 className={styles.blog_heading}>Post in {categoryName}</h3>
+      <CategoryList categories={categories} />
       <div className={styles.blog_container}>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
@@ -56,6 +58,10 @@ export async function getStaticProps({ params: { category_name } }) {
 
   const posts = getPosts();
 
+  // get categories
+  const categories = posts.map((post) => post.frontmatter.category);
+  const uniqueCategories = [...new Set(categories)];
+
   // Filter posts by category
   const categoryPosts = posts.filter(
     (post) => post.frontmatter.category.toLowerCase() === category_name
@@ -65,6 +71,7 @@ export async function getStaticProps({ params: { category_name } }) {
     props: {
       posts: categoryPosts,
       categoryName: category_name,
+      categories: uniqueCategories,
     },
   };
 }
