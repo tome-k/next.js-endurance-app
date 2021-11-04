@@ -6,8 +6,9 @@ import Post from "../../../components/Post";
 import { POST_PER_PAGE } from "../../../config";
 import Pagination from "../../../components/Pagination";
 import { getPosts } from "../../../utils/post";
+import CategoryList from "../../../components/CategoryList";
 
-function AllBlogPostsPage({ posts, numPages, currentPage }) {
+function AllBlogPostsPage({ posts, numPages, currentPage, categories }) {
   return (
     <>
       <Head>
@@ -19,6 +20,7 @@ function AllBlogPostsPage({ posts, numPages, currentPage }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h3 className={styles.blog_heading}>Blog Posts</h3>
+      <CategoryList categories={categories} />
       <div className={styles.blog_container}>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
@@ -53,6 +55,10 @@ export const getStaticProps = async ({ params }) => {
 
   const posts = getPosts();
 
+  // get categories
+  const categories = posts.map((post) => post.frontmatter.category);
+  const uniqueCategories = [...new Set(categories)];
+
   const numPages = Math.ceil(files.length / POST_PER_PAGE);
   const pageIndex = page - 1;
   const orderedPosts = posts.slice(
@@ -65,6 +71,7 @@ export const getStaticProps = async ({ params }) => {
       posts: orderedPosts,
       numPages,
       currentPage: page,
+      categories: uniqueCategories,
     },
   };
 };

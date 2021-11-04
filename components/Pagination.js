@@ -13,19 +13,19 @@ function Pagination({ currentPage, numPages }) {
     <div className={styles.pagination_wrapper}>
       <ul className={styles.pagination_list}>
         {!isFirst && (
-          <Link href={prevPage} passHref>
+          <Link href={prevPage} passHref key={Math.random() * 999}>
             <li className={styles.pagination_link}>Previous</li>
           </Link>
         )}
 
         {Array.from({ length: numPages }, (_, i) => (
-          <Link href={`/blog/page/${i + 1}`} passHref>
+          <Link href={`/blog/page/${i + 1}`} passHref key={Math.random() * 999}>
             <li className={styles.pagination_link}>{i + 1}</li>
           </Link>
         ))}
 
         {!isLast && (
-          <Link href={nextPage} passHref>
+          <Link href={nextPage} passHref key={Math.random() * 999}>
             <li className={styles.pagination_link}>Next</li>
           </Link>
         )}
