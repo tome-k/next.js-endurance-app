@@ -1,0 +1,47 @@
+.about {
+  background-color: #fff;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header > h2 {
+  padding: 3rem 0 0;
+  text-align: center;
+  font-size: 4rem;
+  line-height: 1.4;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.76);
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.76);
+}
+
+.header > p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.76);
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.76);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header h2 {
+    font-size: 3rem;
+    margin-left: 1.5rem;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+}
