@@ -12,8 +12,16 @@
   position: fixed;
   top: 20vh;
   left: calc(50% - 10rem);
-  background-image: url("/images/run_13.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.modal_img {
+  border-radius: 6px;
+  position: relative;
+  z-index: -3;
+}
+
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

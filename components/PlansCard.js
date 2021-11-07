@@ -17,12 +17,10 @@ function PlansCard(props) {
       <h2>{props.text}</h2>
       <div className="actions">
         <button className="btn" onClick={deleteHandler}>
-          more
+          read more
         </button>
       </div>
-      {modalIsOpen && (
-        <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />
-      )}
+      {modalIsOpen && <Modal onCancel={closeModalHandler} img={props.img} />}
       {modalIsOpen && <Backdrop onCancel={closeModalHandler} />}
     </div>
   );
