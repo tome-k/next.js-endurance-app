@@ -40,7 +40,7 @@ function Post({ post }) {
           <p>{post.frontmatter.author}</p>
         </div>
         <Link href={`/blog/${post.slug}`}>
-          <a className={styles.post_btn}>Read More</a>
+          <a className="btn">Read More</a>
         </Link>
       </div>
     </div>

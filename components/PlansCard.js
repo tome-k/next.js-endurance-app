@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Backdrop from "../components/Backdrop";
 import Modal from "../components/Modal";
+import styles from "../styles/PlansCard.module.css";
 
 function PlansCard(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -13,9 +14,9 @@ function PlansCard(props) {
     setModalIsOpen(false);
   }
   return (
-    <div className="card">
+    <div className={styles.plans_card}>
       <h2>{props.text}</h2>
-      <div className="actions">
+      <div>
         <button className="btn" onClick={deleteHandler}>
           read more
         </button>
