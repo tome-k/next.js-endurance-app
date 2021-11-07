@@ -103,6 +103,46 @@ p {
   /* height: 100vh; */
 }
 
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #1483ce;
+  color: white;
+  border: 1px solid #1483ce;
+  margin: 0 1rem;
+  z-index: 9;
+}
+
+.btn:hover {
+  transition: all 350ms ease-in-out;
+  background-color: #1a1115;
+  border-color: #1a1115;
+}
+
+.btn--alt {
+  background-color: transparent;
+  color: #800040;
+}
+
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 25rem;
+  margin: 2rem;
+}
+
+.actions {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .main-content {
     padding: 0 0.5rem;
