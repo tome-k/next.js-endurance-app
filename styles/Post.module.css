@@ -50,23 +50,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.post_btn {
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--clr-neutral-900);
-  padding: 0.7em 1.5em;
-  border-radius: 0.2em;
-  border: 2px solid #000;
-  margin-right: 0.625rem;
-  transition: all 350ms ease-in-out;
-}
-.post_btn:hover {
-  background-color: #000;
-  border: 2px solid #000;
-  color: #fff;
-}
 
 .post_items {
   justify-content: space-between;
