@@ -6,9 +6,23 @@ import Link from "next/link";
 import styles from "../styles/Navigation.module.css";
 
 const Navigation = () => {
+  const [navigation, setNavigation] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 750) {
+        setNavigation(true);
+      } else {
+        setNavigation(false);
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll", null);
+    };
+  }, []);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -24,7 +38,13 @@ const Navigation = () => {
   }, [showLinks]);
 
   return (
-    <header className={styles.navigation}>
+    <header
+      className={
+        navigation
+          ? `${styles.navigation} ${styles.active}`
+          : `${styles.navigation}`
+      }
+    >
       <nav className={styles.nav}>
         <div className={styles.center}>
           <div className={styles.header}>

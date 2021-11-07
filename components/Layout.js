@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Notification from "../components/Notification";
 import { useContext } from "react";
 import NotificationContext from "../store/notification-context";
+import Hero from "./Hero";
 
 function Layout({ children }) {
   const router = useRouter();
@@ -14,6 +15,7 @@ function Layout({ children }) {
       {router.pathname !== "/404" && router.pathname !== "/500" && (
         <Navigation />
       )}
+      <Hero />
       <main className="main-content">{children}</main>
       {router.pathname !== "/404" && router.pathname !== "/500" && <Footer />}
       {activeNotification && (
