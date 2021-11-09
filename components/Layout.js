@@ -15,7 +15,7 @@ function Layout({ children }) {
       {router.pathname !== "/404" && router.pathname !== "/500" && (
         <Navigation />
       )}
-      <Hero />
+      {router.pathname !== "/404" && router.pathname !== "/500" && <Hero />}
       <main className="main-content">{children}</main>
       {router.pathname !== "/404" && router.pathname !== "/500" && <Footer />}
       {activeNotification && (

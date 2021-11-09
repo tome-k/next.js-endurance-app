@@ -12,7 +12,7 @@
 }
 
 .inner {
-  color: #fff;
+  color: var(--clr-accent-108);
   position: absolute;
   left: 14%;
   bottom: 20%;

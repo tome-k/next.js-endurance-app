@@ -1,5 +1,5 @@
 .container {
-  color: #fff;
+  color: var(--clr-neutral-100);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,6 @@
   filter: brightness(50%);
   z-index: -3;
   object-position: center;
-  object-fit: cover;
 }
 
 .container h2 {

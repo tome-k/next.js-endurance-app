@@ -18,7 +18,7 @@ function Page404() {
         src="/images/not_found_000.jpg"
         layout="fill"
         alt="An exhausted runner who sits at the finish line of an athletics track"
-        // objectFit="cover"
+        objectFit="cover"
         quality={100}
         className={styles.img}
       />
