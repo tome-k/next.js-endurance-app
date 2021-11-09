@@ -1,5 +1,5 @@
 .container {
-  color: #fff;
+  color: var(--clr-accent-108);
   display: flex;
   align-items: center;
   justify-content: center;
