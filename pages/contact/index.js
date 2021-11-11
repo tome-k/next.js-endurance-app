@@ -14,15 +14,17 @@ function ContactPage() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <section className="center">
+        <div className={styles.form__container}>
+          <h3>Write to Us</h3>
+          <Form />
+        </div>
+      </section>
       <section className={styles.contact}>
         <h4>Here You can reach Us</h4>
         <h5>every wednesday and sunday</h5>
         <h6>at 6 PM</h6>
         <Map />
-        <div className={styles.form__container}>
-          <h3>Write to Us</h3>
-          <Form />
-        </div>
       </section>
     </>
   );
