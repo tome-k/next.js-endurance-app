@@ -9,7 +9,7 @@
 }
 
 .contact > h4 {
-  margin-top: 1rem;
+  font-size: 3rem;
 }
 
 .form__container {
@@ -17,4 +17,6 @@
 }
 .form__container h3 {
   text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
 }

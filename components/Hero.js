@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section className={styles.heroContainer}>
       <Image
-        src="/images/run_00.jpg"
+        src="/images/run_01.jpg"
         alt="Ultramarathon runner in the clouds, running down the mountain, before dawn"
         layout="fill"
         objectFit="cover"
