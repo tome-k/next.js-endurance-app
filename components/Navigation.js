@@ -71,6 +71,11 @@ const Navigation = () => {
                   </li>
                 );
               })}
+              <div className={styles.login_container}>
+                <Link href="/login" passHref>
+                  <button className={styles.login_btn}>Log in</button>
+                </Link>
+              </div>
             </ul>
           </div>
         </div>

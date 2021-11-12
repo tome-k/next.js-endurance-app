@@ -82,6 +82,35 @@
   height: 50rem;
 }
 
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_btn {
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0.65em 1.1em;
+  border-radius: 0.2em;
+  margin-left: 1.8rem;
+  color: rgb(46, 44, 44);
+  background-color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-neutral-100);
+  transition: all 350ms ease-in-out;
+}
+
+.login_btn:hover {
+  border: 1px solid var(--clr-neutral-100);
+  color: var(--clr-primary-6);
+  background-color: transparent;
+}
+
 @media screen and (min-width: 760px) {
   .center {
     max-width: 1299px;
@@ -89,7 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.875rem 0.7rem;
+    padding: 1.75rem 0.7rem;
   }
   .header {
     padding: 0;
@@ -102,6 +131,8 @@
   }
   .links {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .links a {
     padding: 0;
@@ -110,5 +141,12 @@
   .links a:hover {
     padding: 0;
     background: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login_container {
+    padding: 0 0 1rem;
+    margin-left: 0;
   }
 }
