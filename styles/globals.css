@@ -5,15 +5,9 @@
   --clr-neutral-100: hsla(0, 0%, 80%, 0.767);
   --clr-accent-100: hsl(0, 0%, 100%);
   --clr-accent-108: hsla(0, 0%, 100%, 0.8);
-
   --clr-primary-6: rgba(255, 255, 255, 0.801);
-  --clr-primary-7: hsl(36, 36%, 30%);
-  --clr-primary-8: hsl(210, 2%, 35%);
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
@@ -26,8 +20,6 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-
-  --white: hsl(0, 0%, 100%);
   --card-testimonial: hsl(0, 3%, 92%);
   --bg-blue: hsl(216, 53%, 9%);
   --link-color: hsl(245, 86%, 36%);
@@ -50,7 +42,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  /* line-height: 1.5; */
   overflow-x: hidden;
 }
 

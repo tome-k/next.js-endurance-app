@@ -2,7 +2,7 @@
   color: #fff;
   position: relative;
   overflow: hidden;
-  padding: 6.6rem;
+  padding: 7rem;
   max-width: 70%;
   border-radius: 5px;
 }
@@ -10,4 +10,15 @@
 .img {
   z-index: -3;
   filter: brightness(40%);
+}
+
+@media screen and (max-width: 799px) {
+  .article {
+    padding: 2.5rem;
+    min-width: 78%;
+  }
+
+  .article > p {
+    font-size: 0.85rem;
+  }
 }
