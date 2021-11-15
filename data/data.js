@@ -14,21 +14,16 @@ export const links = [
   },
   {
     id: 2,
-    url: "/plans",
-    text: "plans",
-  },
-  {
-    id: 3,
     url: "/equipment",
     text: "equipment",
   },
   {
-    id: 4,
+    id: 3,
     url: "/blog",
     text: "blog",
   },
   {
-    id: 5,
+    id: 4,
     url: "/contact",
     text: "contact",
   },
