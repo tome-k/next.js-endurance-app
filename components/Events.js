@@ -26,6 +26,24 @@ function Events() {
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore nobis repellendus iusto optio at."
           link="https://www.baa.org/"
         />
+        <AwesomeCard
+          img="/images/newyork.jpg"
+          title="New York Marathon"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore nobis repellendus iusto optio at."
+          link="https://www.nyrr.org/tcsnycmarathon"
+        />
+        <AwesomeCard
+          img="/images/sydney.jpg"
+          title="Sydney Marathon"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore nobis repellendus iusto optio at."
+          link="https://sydneyrunningfestival.com.au/marathon/"
+        />
+        <AwesomeCard
+          img="/images/london.jpg"
+          title="London Marathon"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore nobis repellendus iusto optio at."
+          link="https://www.tcslondonmarathon.com/"
+        />
       </div>
     </section>
   );
